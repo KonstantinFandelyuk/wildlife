@@ -2,7 +2,8 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html,
 body,
 div,
@@ -409,14 +410,14 @@ html {
   font-size: 10px; }
 
 body {
-  color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1;
-  overflow-x: hidden;
-  background-color: #fff; }
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden; }
 
 img {
   max-width: 100%;
@@ -426,9 +427,11 @@ img {
 a {
   text-decoration: none;
   transition: 0.5s linear;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #f7f7f7; }
 
 a:hover {
+  color: #cd6326;
   transition: 0.5s linear; }
 
 button {
@@ -439,6 +442,11 @@ button {
 button,
 input[type="submit"] {
   cursor: pointer; }
+
+.button {
+  border-radius: 5px;
+  color: #f7f7f7;
+  background: #cd6326; }
 
 .wrapper {
   position: relative; }
@@ -453,3 +461,225 @@ input[type="submit"] {
 @media (max-width: 1200px) {
   .container {
     padding: 0 15px; } }
+
+.header {
+  background-color: #02160b;
+  color: #f7f7f7;
+  padding-top: 20px; }
+  .header-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-menu__list-item .logo {
+      display: flex;
+      align-items: center; }
+      .header-menu__list-item .logo .text {
+        font-family: "Roboto";
+        font-size: 3.2rem;
+        line-height: 60px;
+        margin-left: 15px;
+        text-transform: uppercase; }
+    .header-menu__list-item .nav__list {
+      display: flex;
+      align-items: center; }
+      .header-menu__list-item .nav__list-item {
+        font-size: 2.3rem;
+        line-height: 46px;
+        margin-left: 60px; }
+        .header-menu__list-item .nav__list-item:first-child {
+          margin-left: 0; }
+        .header-menu__list-item .nav__list-item .search {
+          cursor: pointer;
+          transition: 0.4s linear; }
+          .header-menu__list-item .nav__list-item .search:hover {
+            transform: scale(1.1);
+            transition: 0.4s linear; }
+        .header-menu__list-item .nav__list-item .login {
+          border-radius: 5px;
+          padding: 0 23px;
+          color: white;
+          border: 2px solid #cd6326;
+          background: transparent;
+          transition: 0.5s linear; }
+          .header-menu__list-item .nav__list-item .login:hover {
+            background-color: #cd6326;
+            transition: 0.5s linear; }
+
+.survival {
+  background-image: url("../img/survival/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 780px;
+  margin-top: -102px;
+  padding-top: 200px;
+  color: #f7f7f7;
+  background-color: #02160b; }
+  .survival .title {
+    font-size: 4.8rem;
+    line-height: 72px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #cd6326;
+    margin-bottom: 50px; }
+  .survival .subtitle {
+    font-size: 1.8rem;
+    line-height: 27px;
+    max-width: 274px;
+    margin-bottom: 49px; }
+  .survival .button--bg {
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 16px 42px;
+    transition: 0.5s linear; }
+    .survival .button--bg:hover {
+      background-color: #e68f28;
+      transition: 0.5s linear; }
+
+.articles {
+  padding-top: 120px;
+  padding-bottom: 239px;
+  text-align: center;
+  background-color: #ccc; }
+  .articles .title {
+    font-size: 4.8rem;
+    line-height: 72px;
+    margin-bottom: 20px; }
+  .articles .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 120px; }
+  .articles .slider {
+    position: relative; }
+    .articles .slider__list {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .articles .slider__list-item {
+        margin-left: 60px; }
+        .articles .slider__list-item:first-child {
+          margin-left: 0; }
+        .articles .slider__list-item .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: 300px;
+          height: 360px;
+          color: #f7f7f7;
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover; }
+          .articles .slider__list-item .card--deer {
+            background-image: url("../img/slider/1.png"); }
+          .articles .slider__list-item .card--squirrel {
+            background-image: url("../img/slider/2.png"); }
+          .articles .slider__list-item .card--bird {
+            background-image: url("../img/slider/3.png"); }
+          .articles .slider__list-item .card-title {
+            font-size: 2.3rem;
+            line-height: 36px; }
+          .articles .slider__list-item .card-text {
+            font-size: 1.7rem;
+            line-height: 27px;
+            margin-bottom: 40px; }
+    .articles .slider .button-slider .button-prev,
+    .articles .slider .button-slider .button-next {
+      position: absolute;
+      cursor: pointer; }
+    .articles .slider .button-slider .button-prev {
+      top: 130px;
+      left: -8px; }
+    .articles .slider .button-slider .button-next {
+      top: 130px;
+      right: -8px; }
+
+.subscribe {
+  background-color: #ccc;
+  text-align: center;
+  padding-bottom: 239px; }
+  .subscribe .title {
+    font-size: 27px;
+    line-height: 40px;
+    margin-bottom: 59px; }
+  .subscribe .form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: calc(540px + 120px);
+    margin: 0 auto; }
+    .subscribe .form .email {
+      width: 540px;
+      padding-left: 15px;
+      background: transparent;
+      border: 1px solid #666;
+      height: 59px; }
+      .subscribe .form .email:not(:placeholder-shown) + label {
+        font-size: 12px;
+        top: 5px;
+        left: 17px;
+        transition: 0.2s linear; }
+    .subscribe .form .label {
+      position: absolute;
+      left: 15px;
+      top: 17px;
+      font-size: 24px;
+      color: #666; }
+    .subscribe .form .button {
+      width: 120px;
+      font-size: 24px;
+      line-height: 60px;
+      height: 59px;
+      border-radius: 0px 5px 5px 0px; }
+      .subscribe .form .button:hover {
+        background-color: #e68f28;
+        transition: 0.5s linear; }
+
+.footer {
+  background-image: url("../img/footer/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #181617;
+  height: 360px;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer-menu__list-item .logo {
+      display: flex;
+      align-items: center; }
+      .footer-menu__list-item .logo .text {
+        font-family: "Roboto";
+        font-size: 32px;
+        line-height: 60px;
+        margin-left: 15px;
+        text-transform: uppercase; }
+    .footer-menu__list-item .nav__list {
+      display: flex;
+      align-items: center; }
+      .footer-menu__list-item .nav__list-item {
+        font-size: 23px;
+        line-height: 60px;
+        margin-left: 85px; }
+        .footer-menu__list-item .nav__list-item:first-child {
+          margin-left: 0; }
+    .footer-menu__list-item .social__list {
+      display: flex;
+      align-items: center; }
+      .footer-menu__list-item .social__list-item {
+        margin-left: 27px; }
+        .footer-menu__list-item .social__list-item:first-child {
+          margin-left: 0; }
+        .footer-menu__list-item .social__list-item img {
+          transition: 0.5s linear; }
+          .footer-menu__list-item .social__list-item img:hover {
+            transition: 0.5s linear;
+            transform: scale(1.1); }

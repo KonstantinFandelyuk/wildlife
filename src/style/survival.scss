@@ -1,0 +1,37 @@
+.survival {
+  background-image: url("../img/survival/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 780px;
+  margin-top: -102px;
+  padding-top: 200px;
+  color: #f7f7f7;
+  background-color: #02160b;
+
+  .title {
+    font-size: 4.8rem;
+    line-height: 72px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #cd6326;
+    margin-bottom: 50px;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+    line-height: 27px;
+    max-width: 274px;
+    margin-bottom: 49px;
+  }
+  .button--bg {
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 16px 42px;
+    transition: 0.5s linear;
+    &:hover {
+      background-color: #e68f28;
+      transition: 0.5s linear;
+    }
+  }
+}

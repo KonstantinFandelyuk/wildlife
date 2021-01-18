@@ -1,0 +1,48 @@
+.subscribe {
+  background-color: #ccc;
+  text-align: center;
+  padding-bottom: 239px;
+  .title {
+    font-size: 27px;
+    line-height: 40px;
+    margin-bottom: 59px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: calc(540px + 120px);
+    margin: 0 auto;
+    .email {
+      width: 540px;
+      padding-left: 15px;
+      background: transparent;
+      border: 1px solid #666;
+      height: 59px;
+      &:not(:placeholder-shown) + label {
+        font-size: 12px;
+        top: 5px;
+        left: 17px;
+        transition: 0.2s linear;
+      }
+    }
+    .label {
+      position: absolute;
+      left: 15px;
+      top: 17px;
+      font-size: 24px;
+      color: #666;
+    }
+    .button {
+      width: 120px;
+      font-size: 24px;
+      line-height: 60px;
+      height: 59px;
+      border-radius: 0px 5px 5px 0px;
+      &:hover {
+        background-color: #e68f28;
+        transition: 0.5s linear;
+      }
+    }
+  }
+}

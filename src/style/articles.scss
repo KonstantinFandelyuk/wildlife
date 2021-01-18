@@ -1,0 +1,79 @@
+.articles {
+  padding-top: 120px;
+  padding-bottom: 239px;
+  text-align: center;
+  background-color: #ccc;
+  .title {
+    font-size: 4.8rem;
+
+    line-height: 72px;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 120px;
+  }
+  .slider {
+    position: relative;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-item {
+        margin-left: 60px;
+        &:first-child {
+          margin-left: 0;
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: 300px;
+          height: 360px;
+          color: #f7f7f7;
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &--deer {
+            background-image: url("../img/slider/1.png");
+          }
+          &--squirrel {
+            background-image: url("../img/slider/2.png");
+          }
+          &--bird {
+            background-image: url("../img/slider/3.png");
+          }
+          &-title {
+            font-size: 2.3rem;
+            line-height: 36px;
+          }
+          &-text {
+            font-size: 1.7rem;
+            line-height: 27px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+    .button-slider {
+      .button-prev,
+      .button-next {
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .button-prev {
+        top: 130px;
+        left: -8px;
+      }
+      .button-next {
+        top: 130px;
+        right: -8px;
+      }
+    }
+  }
+}

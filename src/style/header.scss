@@ -1,0 +1,59 @@
+.header {
+  background-color: #02160b;
+  color: #f7f7f7;
+  padding-top: 20px;
+  &-menu {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-item {
+        .logo {
+          display: flex;
+          align-items: center;
+          .text {
+            font-family: "Roboto";
+            font-size: 3.2rem;
+            line-height: 60px;
+            margin-left: 15px;
+            text-transform: uppercase;
+          }
+        }
+        .nav {
+          &__list {
+            display: flex;
+            align-items: center;
+            &-item {
+              font-size: 2.3rem;
+              line-height: 46px;
+              margin-left: 60px;
+              &:first-child {
+                margin-left: 0;
+              }
+              .search {
+                cursor: pointer;
+                transition: 0.4s linear;
+                &:hover {
+                  transform: scale(1.1);
+                  transition: 0.4s linear;
+                }
+              }
+              .login {
+                border-radius: 5px;
+                padding: 0 23px;
+                color: white;
+                border: 2px solid #cd6326;
+                background: transparent;
+                transition: 0.5s linear;
+                &:hover {
+                  background-color: #cd6326;
+                  transition: 0.5s linear;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

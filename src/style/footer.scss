@@ -1,0 +1,65 @@
+.footer {
+  background-image: url("../img/footer/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #181617;
+  height: 360px;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-menu {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-item {
+        .logo {
+          display: flex;
+          align-items: center;
+          .text {
+            font-family: "Roboto";
+            font-size: 32px;
+            line-height: 60px;
+            margin-left: 15px;
+            text-transform: uppercase;
+          }
+        }
+        .nav {
+          &__list {
+            display: flex;
+            align-items: center;
+            &-item {
+              font-size: 23px;
+              line-height: 60px;
+              margin-left: 85px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+        .social {
+          &__list {
+            display: flex;
+            align-items: center;
+            &-item {
+              margin-left: 27px;
+              &:first-child {
+                margin-left: 0;
+              }
+              img {
+                transition: 0.5s linear;
+                &:hover {
+                  transition: 0.5s linear;
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
