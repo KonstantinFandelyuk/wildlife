@@ -22,6 +22,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1140px) {
+        max-width: 838px;
+        margin: 0 auto;
+        overflow: hidden;
+        @media (max-width: 940px) {
+          max-width: 410px;
+        }
+      }
       &-item {
         margin-left: 60px;
         &:first-child {
@@ -60,19 +68,38 @@
       }
     }
     .button-slider {
+      @media (max-width: 570px) {
+        display: flex;
+        justify-content: space-between;
+      }
       .button-prev,
       .button-next {
         position: absolute;
         cursor: pointer;
+        @media (max-width: 570px) {
+          position: static;
+        }
       }
 
       .button-prev {
         top: 130px;
         left: -8px;
+        @media (max-width: 940px) {
+          left: 70px;
+          @media (max-width: 570px) {
+            left: 20px;
+          }
+        }
       }
       .button-next {
         top: 130px;
         right: -8px;
+        @media (max-width: 940px) {
+          right: 70px;
+          @media (max-width: 570px) {
+            right: 20px;
+          }
+        }
       }
     }
   }
